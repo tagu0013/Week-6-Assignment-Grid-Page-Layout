@@ -13,4 +13,17 @@ header {
     background-color: #E6B8C4; 
     padding: 20px;
     text-align: center;
+
+    
+.logo img {
+    max-width: 800px;
+    height: auto;
+    margin-bottom: 15px;
 }
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
