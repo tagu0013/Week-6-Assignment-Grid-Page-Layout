@@ -13,10 +13,11 @@ header {
     background-color: #E6B8C4; 
     padding: 20px;
     text-align: center;
+}
 
     
 .logo img {
-    max-width: 800px;
+    max-width: 900px;
     height: auto;
     margin-bottom: 15px;
 }
@@ -51,11 +52,32 @@ header {
 
 .promo-banner {
     width: 100%;
-    max-width: 950px; 
-    margin: 0 auto 20px auto; 
+    margin-bottom: 20px;
 }
 
 .promo-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+section {
+    padding: 15px 20px;
+}
+
+h1 {
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    color: #B45F06;
+}
+
+.product-card {
+    background-color: #E6E6E6;
+    margin-bottom: 15px;
+}
+
+.product-card img {
     width: 100%;
     height: auto;
     display: block;
