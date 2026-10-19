@@ -53,13 +53,14 @@ header {
 }
 
 .promo-banner {
-    width: 100%;
+    width: 100%px;
+    height: auto;
     margin-bottom: 20px;
 }
 
 .promo-banner img {
-    width: 100%;
-    height: auto;
+    width: 2000px;
+    height: 300px;
     display: block;
 }
 
