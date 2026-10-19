@@ -100,12 +100,12 @@ h1 {
 
 #other-bouquets {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
     max-width: 900px;
     margin: 0 auto;
     gap: 15px;
 }
-
 
 
 #featured-bouquets {
