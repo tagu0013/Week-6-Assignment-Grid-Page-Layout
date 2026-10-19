@@ -86,10 +86,16 @@ h1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     grid-template-rows: repeat(2, auto);
+    max-width: 900px;
+    margin: 0 auto;
+    gap: 5px;
+    
 }
 
 #featured-bouquets {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
-    gap: 15px;                    
+    gap: 15px;              
+    max-width: 900px;
+    margin: 0 auto;      
 }
