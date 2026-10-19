@@ -7,6 +7,8 @@
 body {
     background-color: white;
     color: brown;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header {
@@ -72,13 +74,22 @@ h1 {
     color: #B45F06;
 }
 
-.product-card {
-    background-color: #E6E6E6;
-    margin-bottom: 15px;
+#bouquets {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-.product-card img {
-    width: 100%;
-    height: auto;
-    display: block;
+#other-bouquets {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, auto);
+}
+
+#featured-bouquets {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 15px;                    
 }
