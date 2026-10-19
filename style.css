@@ -9,13 +9,27 @@ body {
     color: brown;
     margin-left: auto;
     margin-right: auto;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: auto 1fr auto;
 }
 
+
 header {
+    grid-area: header;
     background-color: #E6B8C4; 
     padding: 20px;
     text-align: center;
 }
+
+main {
+    grid-area: main;
+    padding: 20px;
+}
+
 
     
 .logo img {
@@ -53,13 +67,14 @@ header {
 }
 
 .promo-banner {
-    width: 100%px;
+    width: 100%;
     height: auto;
     margin-bottom: 20px;
 }
 
 .promo-banner img {
-    width: 2000px;
+    width: 100%;
+    max-width: 2000px;
     height: 300px;
     display: block;
 }
@@ -85,13 +100,13 @@ h1 {
 
 #other-bouquets {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     max-width: 900px;
     margin: 0 auto;
-    gap: 5px;
-    
+    gap: 15px;
 }
+
+
 
 #featured-bouquets {
     display: grid;
