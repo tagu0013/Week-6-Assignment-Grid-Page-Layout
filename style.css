@@ -32,7 +32,8 @@ header {
 .logo img {
   max-width: 320px;
   height: auto;
-  margin-bottom: 1rem;
+  margin: 0 auto 1rem;
+
 }
 
 .top-nav {
