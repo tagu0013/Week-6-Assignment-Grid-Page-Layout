@@ -95,28 +95,90 @@ h1 {
 
 }
 
-#bouquets {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-    max-width: 900px;
-    margin: 0 auto;
+p {
+  max-width: 65ch;
+  line-height: 1.5;
 }
 
-#other-bouquets {
-    display: grid;
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-wrapper {
+  container-type: inline-size;
+}
+
+.bouquet-card {
+  background: #ffffff;
+  border: 1px solid #EED4DA;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.bouquet-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-details {
+  padding: 1.2rem;
+}
+
+.card-details h2 {
+  font-size: 1.1rem;
+  color: #B45F06;
+  margin-bottom: 0.5rem;
+}
+
+.card-details p {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+@container (min-width: 420px) {
+  .bouquet-card {
+    flex-direction: row;
+    align-items: center;
+  }
+  .bouquet-card img {
+    width: 45%;
+    height: 100%;
+    min-height: 160px;
+  }
+  .card-details {
+    width: 55%;
+  }
+}
+
+.bouquet-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+@media screen and (min-width: 600px) {
+  h1 {
+    color: orange;
+  }
+
+  .bouquet-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 960px) {
+  h1 {
+    color: lightblue;
+    font-family: Arial, sans-serif;
+  }
+
+  .grid-three {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, auto);
-    max-width: 80%;
-    margin: 0 auto;
-    gap: 15px;
-}
-
-
-#featured-bouquets {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 15px;              
-    max-width: 80%;
-    margin: 0 auto;      
+  }
 }
